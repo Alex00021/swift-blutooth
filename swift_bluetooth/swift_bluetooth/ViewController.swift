@@ -125,7 +125,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
 //        cutLinkBtn?.addTarget(self, action: #selector(cancel), for: .touchUpInside)
 //        self.view.addSubview(cutLinkBtn!)
         
-        stopBtn?.frame = CGRect(x: (view.frame.width - 80)/2, y: button!.frame.origin.y + 100, width: 80, height: 80)
+        stopBtn?.frame = CGRect(x: (view.frame.width - 200)/2, y: button!.frame.origin.y + 100, width: 200, height: 80)
         stopBtn?.setTitle("停止扫描", for: .normal)
         stopBtn?.setTitleColor(UIColor.white, for: .normal)
         stopBtn?.backgroundColor = UIColor.blue
@@ -159,8 +159,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     
     @objc func deviceList() {
         
-        let list = DeviceListController()
-        self.navigationController?.pushViewController(list, animated: true)
+//        let list = DeviceListController()
+//        self.navigationController?.pushViewController(list, animated: true)
     }
     
     

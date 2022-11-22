@@ -137,8 +137,8 @@ extension LLBlueTooth : CBCentralManagerDelegate{
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         //  因为iOS目前不提供蓝牙设备的UUID的获取，所以在这里通过蓝牙名称判断是否是本公司的设备
                 guard peripheral.name != nil , peripheral.name!.contains("LE-Allway F20 Pro") else {
-        //            return
-        //        }
+                    return
+                }
         print("USA步伐不断加快能否看到你刷卡机你==\(peripheral.name)")
         print("搜索可连接的蓝牙设备为：\(peripheral.name)")
     }
