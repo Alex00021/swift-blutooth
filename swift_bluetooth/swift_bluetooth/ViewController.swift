@@ -40,8 +40,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     var theSakeCC: CBCharacteristic!
     
     //
-    private let BLE_WRITE_UUID = "00001101-D102-11E1-9B23-00025B00A5A5"
-    private let BLE_NOTIFY_UUID = "00001103-D102-11E1-9B23-00025B00A5A5"
+    private let BLE_WRITE_UUID = "00000000-0000-0000-0000-000000000000"
+    private let BLE_NOTIFY_UUID = "11111111-1111-1111-1111-111111111111"
     
     //  传出数据
     var backDataBlock: BleDataBlock?
